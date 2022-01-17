@@ -3,6 +3,12 @@ body{
 
 }
 
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 button {
     background-color: rgb(240, 239, 239); /* Green */
     border: none;
@@ -27,6 +33,11 @@ button {
     width: 400px;
     line-height: 150%;
     font-size: 18px
+}
+
+.experience {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .hello {
@@ -70,10 +81,28 @@ button {
     width: 400px;
     margin: 20px
 }
+.portfoliotitle {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.portfolioimg {
+    height: 40%;
+    width: 40%;
+    margin: 20px 30px;
+}
+
+.portfoliorow{
+    margin: 0 auto;
+}
 
 .profilebar {
     display: flex;
-    justify-content: center;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+.skills {
+    margin-left: 50px;
+    margin-right: 50px;
 }
