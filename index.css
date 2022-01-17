@@ -1,0 +1,54 @@
+body{
+    background-color: #E6E6E6;
+
+}
+.details {
+    margin-top: 50px;
+    margin-left: 20px
+}
+
+.description {
+    width: 400px;
+    line-height: 150%;
+    font-size: 18px
+}
+
+.hello {
+    font-size: 100px;
+    margin: 0px;
+}
+
+.navbarmenu {
+    background-color: #333;
+}
+
+.navbarmenu a {
+    float: left;
+    text-align: center;
+    color: #141414;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbarmenu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbarmenu a.active {
+    background-color: #04AA6D;
+}
+
+.photo {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin: 20px
+}
+
+.profilebar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
