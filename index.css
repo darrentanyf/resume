@@ -2,6 +2,22 @@ body{
     background-color: #E6E6E6;
 
 }
+
+button {
+    background-color: rgb(240, 239, 239); /* Green */
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  button:hover {
+    color: rgb(72, 116, 158);
+  }
+
 .details {
     margin-top: 50px;
     margin-left: 20px
@@ -18,27 +34,35 @@ body{
     margin: 0px;
 }
 
-.navbarmenu {
-    background-color: #333;
+.linebreak {
+    box-sizing: border-box;
+    border-top: 1px solid #777777;
+    margin: 0 50px
 }
 
-.navbarmenu a {
+.navbar {
+    margin: 10px 5px;
+}
+.navbarmenu {
     float: left;
     text-align: center;
     color: #141414;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border: 1px solid #414141;
+    background-color: rgb(240, 239, 239);
+    box-shadow: 0 0.6px #414141;
 }
 
-.navbarmenu a:hover {
-    background-color: #ddd;
+/* .navbar:hover {
+    background-color: red;
     color: black;
 }
 
-.navbarmenu a.active {
+.navbar:active {
     background-color: #04AA6D;
-}
+} */
 
 .photo {
     border-radius: 50%;
@@ -51,4 +75,5 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
