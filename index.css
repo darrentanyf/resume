@@ -9,6 +9,12 @@ a:link {
     text-decoration: none;
 }
 
+a:hover {
+    color: rgb(72, 116, 158);
+    background-color: transparent;
+    text-decoration: none;
+}
+
 button {
     background-color: rgb(240, 239, 239); /* Green */
     border: none;
@@ -93,16 +99,71 @@ button {
 }
 
 .portfoliorow{
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .profilebar {
     display: flex;
+    justify-content: center;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+.professional {
+    display:flex;
+    line-height: 40px;
+    background-color: rgb(253, 253, 253);
+    /* background-image: -webkit-linear-gradient(180deg, white 60%, #9fbcd8 40%); */
+    width: 500px;
+    height: 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .skills {
     margin-left: 50px;
     margin-right: 50px;
+
+}
+
+.technical {
+    display:flex;
+    line-height: 40px;
+    background-color: rgb(253, 253, 253);
+    /* background-image: -webkit-linear-gradient(180deg, white 60%, #9fbcd8 40%); */
+    width: 500px;
+    height: 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.skilldetails {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+}
+
+.prof-left {
+    margin: auto;
+}
+
+.prof-right {
+    margin: auto;
+    margin-left: -20px;
+    font-size: 18px;
+}
+
+.tech-left {
+    margin: auto;
+}
+
+.tech-mid {
+    margin: auto;
+    margin-left: -20px;
+    font-size: 18px;   
+}
+
+.tech-right {
+    margin: auto;
+    margin-left: -20px;
+    font-size: 18px;
 }
