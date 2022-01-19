@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');</style>
     <link rel="stylesheet" href="index.css" />
+    <title>Darren Tan</title>
 </head>
 
 <body>
-    <div class="profilebar">
+    <div id="profilebar">
         <div class="profile">
             <div><img src="images/picture2.jpeg" class="photo" /></div>
         </div>
@@ -23,9 +27,18 @@
                 <button>
                     <a href="images/Darren Tan-Resume.pdf" target="_blank">Resume</a>
                 </button>
-                <button>Skills</button>
-                <button>Experience</button>
-                <button>Portfolio</button>
+                <button>
+                    <a href="#profilebar" >Profile</a>
+                    </button>
+                    <button>
+                        <a href="#skills" >Skills</a>
+                        </button>
+                        <button>
+                            <a href="#experience" >Experience</a>
+                            </button>
+                            <button>
+                                <a href="#portfolio" >Portfolio</a>
+                                </button>
             </div>
         </div>
     </div>
@@ -34,7 +47,7 @@
         <div class="linebreak"></div>
     </div>
 
-    <div class="skills">
+    <div id="skills">
         <h1>My Skills</h1>
     </div>
 
@@ -83,7 +96,7 @@
             <div class="linebreak"></div>
         </div>
 
-        <div class="experience">
+        <div id="experience">
             <h1>My Experience</h1>
         </div>
 
@@ -91,7 +104,7 @@
             <div class="linebreak"></div>
         </div>
 
-        <div class="portfolio">
+        <div id="portfolio">
             <div class="portfoliotitle">
                 <h1>My Portfolio</h1>
             </div>
@@ -104,4 +117,8 @@
                 <img class="portfolioimg" src="images/HandsOn2.png" />
             </div>
         </div>
+
+        <script src="main.js"></script>
 </body>
+
+</html>

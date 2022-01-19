@@ -1,9 +1,22 @@
-body{
-    background-color: #E6E6E6;
+@import "compass/css3";
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
 
 }
 
 a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
@@ -41,7 +54,7 @@ button {
     font-size: 18px
 }
 
-.experience {
+#experience {
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -72,15 +85,6 @@ button {
     box-shadow: 0 0.6px #414141;
 }
 
-/* .navbar:hover {
-    background-color: red;
-    color: black;
-}
-
-.navbar:active {
-    background-color: #04AA6D;
-} */
-
 .photo {
     border-radius: 50%;
     height: 400px;
@@ -93,8 +97,8 @@ button {
 }
 
 .portfolioimg {
-    height: 40%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
     margin: 20px 30px;
 }
 
@@ -103,42 +107,43 @@ button {
     justify-content: center;
 }
 
-.profilebar {
+#profilebar {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .professional {
     display:flex;
     line-height: 40px;
     background-color: rgb(253, 253, 253);
-    /* background-image: -webkit-linear-gradient(180deg, white 60%, #9fbcd8 40%); */
+    background-image: -webkit-linear-gradient(180deg, white 98%, #3c6e71 2%);
     width: 500px;
     height: 300px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 30px;
 }
 
-.skills {
+#skills {
     margin-left: 50px;
     margin-right: 50px;
-
 }
 
 .technical {
     display:flex;
     line-height: 40px;
     background-color: rgb(253, 253, 253);
-    /* background-image: -webkit-linear-gradient(180deg, white 60%, #9fbcd8 40%); */
+    background-image: -webkit-linear-gradient(180deg, white 98%, #3c6e71 2%);
     width: 500px;
     height: 300px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 30px;
 }
 
 .skilldetails {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     margin-bottom: 35px;
 }
 
@@ -167,3 +172,23 @@ button {
     margin-left: -20px;
     font-size: 18px;
 }
+
+a[id="profilebar"]:target ~ #profilebar {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  a[id="skills"]:target ~ #skills {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  
+  a[id="experience"]:target ~ #experience {
+    -webkit-transform: translate3d(0, -200%, 0);
+    transform: translate3d(0, -200%, 0);
+  }
+  
+  a[id= "portfolio"]:target ~ #portfolio {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
