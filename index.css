@@ -91,14 +91,14 @@ button {
     width: 400px;
     margin: 20px
 }
-.portfoliotitle {
+#portfoliotitle {
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .portfolioimg {
-    height: 30%;
-    width: 30%;
+    height: 35%;
+    width: 35%;
     margin: 20px 30px;
 }
 
@@ -110,8 +110,8 @@ button {
 #profilebar {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 180px;
+    margin-bottom: 180px;
 }
 
 .professional {
@@ -123,6 +123,8 @@ button {
     height: 300px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-right: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #skills {
@@ -139,6 +141,8 @@ button {
     height: 300px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .skilldetails {
@@ -188,7 +192,69 @@ a[id="profilebar"]:target ~ #profilebar {
     transform: translate3d(0, -200%, 0);
   }
   
-  a[id= "portfolio"]:target ~ #portfolio {
+  a[id= "portfoliotitle"]:target ~ #portfoliotitle {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
+  }
+
+.timeline {
+    margin-bottom: 60px;
+}
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin-left:-500px;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+
+  }
+
+
+  .right {
+    left: 50%;
+  }
+
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  .footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    background-color: #D0DAEE;
   }
