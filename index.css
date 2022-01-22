@@ -126,7 +126,11 @@ button {
         transition: 0.5s;
         background-color: #F1F1F1;
         margin: 0px;
-        ;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        padding: 30px 30px;
+        line-height: 20px;
 }
 
 .portfoliocard:hover .portfoliotext {
